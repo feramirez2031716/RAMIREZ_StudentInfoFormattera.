@@ -1,1 +1,16 @@
 # RAMIREZ_StudentInfoFormattera.
+first_name = input("Enter first name: ")
+last_name = input("Enter last name: ")
+section = input("Enter section: ")
+fav_subject = input("Enter favorite subject: ")
+
+print("\nFormatted Output:")
+new_fname = (first_name.strip().title())
+new_lname = (last_name.strip().title())
+new_fsub = (fav_subject.strip().title())
+name_length = len(str(new_fname)+str(new_lname))
+print("Name:", new_fname, new_lname)
+print("Name Code:", new_fname.upper(), new_lname.upper())
+print("Section:", section.strip().upper())
+print("Favorite Subject:", new_fsub.strip().title())
+print("Character Count:", name_length+1)
